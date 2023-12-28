@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <Configurations>Debug;Development;Test;Preproduction;Production</Configurations>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\BusinessLogicLayer.BrandMonitorTestTask.Base\BusinessLogicLayer.BrandMonitorTestTask.Base.csproj" />
+        <ProjectReference Include="..\SharedLayer.BrandMonitorTestTask\SharedLayer.BrandMonitorTestTask.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="Assets\Strings.Errors\Domain.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Domain.resx</DependentUpon>
+      </Compile>
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Update="Assets\Strings.Errors\Domain.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>Domain.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+    </ItemGroup>
+</Project>

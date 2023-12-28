@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <Configurations>Debug;Development;Test;Preproduction;Production</Configurations>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\SharedLayer.BrandMonitorTestTask\SharedLayer.BrandMonitorTestTask.csproj" />
+    </ItemGroup>
+</Project>

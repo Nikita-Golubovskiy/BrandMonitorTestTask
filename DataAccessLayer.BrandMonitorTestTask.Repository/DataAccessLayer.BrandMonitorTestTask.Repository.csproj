@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <Configurations>Debug;Development;Test;Preproduction;Production</Configurations>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\BusinessLogicLayer.BrandMonitorTestTask.Base\BusinessLogicLayer.BrandMonitorTestTask.Base.csproj" />
+        <ProjectReference Include="..\BusinessLogicLayer.BrandMonitorTestTask.Model\BusinessLogicLayer.BrandMonitorTestTask.Model.csproj" />
+        <ProjectReference Include="..\BusinessLogicLayer.BrandMonitorTestTask.Repository\BusinessLogicLayer.BrandMonitorTestTask.Repository.csproj" />
+        <ProjectReference Include="..\DataAccessLayer.BrandMonitorTestTask.Base\DataAccessLayer.BrandMonitorTestTask.Base.csproj" />
+        <ProjectReference Include="..\DataAccessLayer.BrandMonitorTestTask.Database\DataAccessLayer.BrandMonitorTestTask.Database.csproj" />
+        <ProjectReference Include="..\SharedLayer.BrandMonitorTestTask\SharedLayer.BrandMonitorTestTask.csproj" />
+    </ItemGroup>
+</Project>

@@ -1,0 +1,48 @@
+{
+    "Default": {
+        "Debug": {
+            "DataSource": "192.168.180.128,1433",
+            "InitialCatalog": "BrandMonitorTestTask",
+            "ApplicationName": "DataAccessLayer.BrandMonitorTestTask.Database",
+            "IntegratedSecurity": false,
+            "ConnectTimeout": 100,
+            "TrustServerCertificate": true
+        },
+
+        "Development": {
+            "DataSource": "192.168.180.128,1433",
+            "InitialCatalog": "BrandMonitorTestTask",
+            "ApplicationName": "DataAccessLayer.BrandMonitorTestTask.Database",
+            "IntegratedSecurity": false,
+            "ConnectTimeout": 100,
+            "TrustServerCertificate": true
+        },
+
+        "Test": {
+            "DataSource": "192.168.180.128,1433",
+            "InitialCatalog": "BrandMonitorTestTask",
+            "ApplicationName": "DataAccessLayer.BrandMonitorTestTask.Database",
+            "IntegratedSecurity": false,
+            "ConnectTimeout": 100,
+            "TrustServerCertificate": true
+        },
+
+        "Preproduction": {
+            "DataSource": "192.168.180.128,1433",
+            "InitialCatalog": "BrandMonitorTestTask",
+            "ApplicationName": "DataAccessLayer.BrandMonitorTestTask.Database",
+            "IntegratedSecurity": false,
+            "ConnectTimeout": 100,
+            "TrustServerCertificate": true
+        },
+
+        "Production": {
+            "DataSource": "192.168.180.128,1433",
+            "InitialCatalog": "BrandMonitorTestTask",
+            "ApplicationName": "DataAccessLayer.BrandMonitorTestTask.Database",
+            "IntegratedSecurity": false,
+            "ConnectTimeout": 100,
+            "TrustServerCertificate": true
+        }
+    }
+}

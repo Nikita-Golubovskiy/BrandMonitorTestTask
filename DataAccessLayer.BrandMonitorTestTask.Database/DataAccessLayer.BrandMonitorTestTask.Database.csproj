@@ -1,0 +1,64 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <Configurations>Debug;Development;Test;Preproduction;Production</Configurations>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <EmbeddedResource Include="connections.json">
+            <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+        </EmbeddedResource>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="EFCore.BulkExtensions" Version="7.1.6" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.10" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.10" />
+
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.10">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+
+        <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="7.0.4" />
+        <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\DataAccessLayer.BrandMonitorTestTask.Base\DataAccessLayer.BrandMonitorTestTask.Base.csproj" />
+        <ProjectReference Include="..\SharedLayer.BrandMonitorTestTask\SharedLayer.BrandMonitorTestTask.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Compile Update="Assets\Strings.Configuration\Connection.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>Connection.resx</DependentUpon>
+        </Compile>
+
+        <Compile Update="Assets\Strings.Errors\Connection.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>Connection.resx</DependentUpon>
+        </Compile>
+    </ItemGroup>
+
+    <ItemGroup>
+        <EmbeddedResource Update="Assets\Strings.Configuration\Connection.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>Connection.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+
+        <EmbeddedResource Update="Assets\Strings.Errors\Connection.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>Connection.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Configurations\Contexts\BrandMonitorTestTask\" />
+      <Folder Include="Configurations\Entities\" />
+      <Folder Include="Entities\" />
+      <Folder Include="Migrations\" />
+    </ItemGroup>
+</Project>
