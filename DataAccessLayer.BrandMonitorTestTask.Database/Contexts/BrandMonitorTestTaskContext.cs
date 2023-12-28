@@ -1,5 +1,5 @@
 using System.Reflection;
-using DataAccessLayer.BrandMonitorTestTask.Database.Configurations.Contexts;
+using DataAccessLayer.BrandMonitorTestTask.Database.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace DataAccessLayer.BrandMonitorTestTask.Database.Contexts;
@@ -25,6 +25,11 @@ public class BrandMonitorTestTaskContext : BaseDbContext<BrandMonitorTestTaskCon
     }
 
     /// <summary>
+    /// Tasks set property.
+    /// </summary>
+    public virtual DbSet<Task> Tasks { get; set; }
+
+    /// <summary>
     /// Override this method to further configure the model that was discovered by convention
     /// from the entity types exposed in <see cref="DbSet{TEntity}">DbSet</see> properties
     /// on your derived context. The resulting model may be cached and re-used for subsequent
@@ -41,10 +46,5 @@ public class BrandMonitorTestTaskContext : BaseDbContext<BrandMonitorTestTaskCon
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
-
-        var modelBuilderConfigurator = new CompositeModelBuilderConfigurator(
-        );
-
-        modelBuilderConfigurator.ConfigureModel(modelBuilder);
     }
 }
