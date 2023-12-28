@@ -20,11 +20,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="V1\Interfaces\" />
-      <Folder Include="V1\Interfaces\" />
-    </ItemGroup>
-
-    <ItemGroup>
       <Compile Update="Assets\Strings.Errors\Common.Designer.cs">
         <DesignTime>True</DesignTime>
         <AutoGen>True</AutoGen>

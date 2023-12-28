@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <TargetFramework>net7.0</TargetFramework>
         <Configurations>Debug;Development;Test;Preproduction;Production</Configurations>
@@ -9,13 +9,6 @@
         <ProjectReference Include="..\BusinessLogicLayer.BrandMonitorTestTask.Model\BusinessLogicLayer.BrandMonitorTestTask.Model.csproj" />
         <ProjectReference Include="..\BusinessLogicLayer.BrandMonitorTestTask.Repository\BusinessLogicLayer.BrandMonitorTestTask.Repository.csproj" />
         <ProjectReference Include="..\SharedLayer.BrandMonitorTestTask\SharedLayer.BrandMonitorTestTask.csproj" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="Converters\" />
-      <Folder Include="DataTransferObjects\" />
-      <Folder Include="DataTransferObjects\" />
-      <Folder Include="Queries\" />
     </ItemGroup>
 
     <ItemGroup>

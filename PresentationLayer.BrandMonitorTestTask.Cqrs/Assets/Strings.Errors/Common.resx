@@ -120,16 +120,10 @@
   <data name="REQUEST_ARGUMENT_IS_MISSING" xml:space="preserve">
     <value>Параметр запроса у ключа/команды не может быть пустым.</value>
   </data>
-  <data name="USER_NOT_FOUND" xml:space="preserve">
-    <value>Пользователь с заданым идентификатором не найдено в системе.</value>
+  <data name="TASK_ID_ALREADY_IN_USE" xml:space="preserve">
+    <value>Задача с данным идентификатором уже существует в системе.</value>
   </data>
-  <data name="USER_SESSION_HAS_INCORRECT_FORMAT" xml:space="preserve">
-    <value>Сессия пользователя имеет некоректный формат.</value>
-  </data>
-  <data name="USER_SESSION_NOT_FOUND" xml:space="preserve">
-    <value>Информация о сессии пользователя не найдена.</value>
-  </data>
-  <data name="USER_SESSION_USER_INFORMATION_NOT_FOUND" xml:space="preserve">
-    <value>Информация о пользователе не найдена в сессии пользователя.</value>
+  <data name="TASK_NOT_FOUND" xml:space="preserve">
+    <value>Задачи с заданым идентификатором не найдено в системе.</value>
   </data>
 </root>

@@ -9,4 +9,8 @@
         <ProjectReference Include="..\BusinessLogicLayer.BrandMonitorTestTask.Model\BusinessLogicLayer.BrandMonitorTestTask.Model.csproj" />
         <ProjectReference Include="..\SharedLayer.BrandMonitorTestTask\SharedLayer.BrandMonitorTestTask.csproj" />
     </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="ParameterObjects\" />
+    </ItemGroup>
 </Project>

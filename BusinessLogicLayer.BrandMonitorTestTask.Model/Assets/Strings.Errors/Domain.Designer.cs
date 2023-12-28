@@ -59,5 +59,14 @@ namespace BusinessLogicLayer.BrandMonitorTestTask.Model.Assets.Strings.Errors {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to У задачи отсутствует статус..
+        /// </summary>
+        internal static string TASK_STATE_IS_MISSING {
+            get {
+                return ResourceManager.GetString("TASK_STATE_IS_MISSING", resourceCulture);
+            }
+        }
     }
 }

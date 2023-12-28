@@ -49,8 +49,6 @@ internal sealed class CoreConfigurator : IConfigurator
 
         applicationBuilder.UseRouting();
 
-        applicationBuilder.UseAuthorization();
-
         applicationBuilder.UseEndpoints(endpoints =>
         {
             endpoints.MapControllers();
